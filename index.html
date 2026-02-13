@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For My Nannaluuuu ❤️</title>
+<style>
+body {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  font-family: Arial, sans-serif;
+  text-align:center;
+}
+
+#message {
+  display:none;
+}
+
+h1 {
+  color:white;
+  font-size:45px;
+}
+
+p {
+  color:white;
+  font-size:20px;
+}
+
+button {
+  background:white;
+  color:#e60073;
+  border:none;
+  padding:15px 25px;
+  font-size:18px;
+  border-radius:25px;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div>
+<button onclick="showMessage()">Click for Surprise ❤️</button>
+
+<div id="message">
+<h1>Happy Valentine’s Day My Love ❤️</h1>
+<p>Nannaluuuu… you are my forever happiness 💖</p>
+</div>
+</div>
+
+<audio id="music" loop>
+  <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mp3">
+</audio>
+
+<script>
+function showMessage() {
+  document.getElementById("message").style.display = "block";
+  document.getElementById("music").play();
+}
+</script>
+
+</body>
+</html>
